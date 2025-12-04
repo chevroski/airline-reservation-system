@@ -63,4 +63,12 @@ public class AirlineManager {
         }
         return null;
     }
+
+    public void removeFlight(Flight flight) {
+        flights.remove(flight);
+    }
+
+    public void removePassenger(Passenger passenger) {
+        passengers.remove(passenger);
+    }
 }

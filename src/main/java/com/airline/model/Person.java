@@ -35,4 +35,16 @@ public abstract class Person {
         System.out.println("Address: " + address);
         System.out.println("Contact: " + contact);
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
 }
