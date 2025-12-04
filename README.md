@@ -96,6 +96,7 @@ We have strictly followed the project guidelines:
 | **OOP Concepts** | Used Inheritance (`Person` -> `Employee`/`Passenger`), Encapsulation (private fields), and Polymorphism. |
 | **Class Structure** | Implemented all classes from the diagram: `Person`, `Employee`, `Passenger`, `AirplanePilot`, `StaffCabin`, `Aircraft`, `Airport`, `Flight`, `Reservation` (Book). |
 | **Specific Methods** | Implemented mandatory methods: `getInfos()`, `getRole()`, `bookFlight()`, `cancelBook()`, `assignFlight()`, `obtainVol()`, etc. |
+| **CRUD Operations** | **Full CRUD Implemented**: Create, Read, Update (setters), and Delete (remove methods) for core entities. |
 | **Data Structures** | Used `ArrayList` and `HashMap` for efficient data management. |
 | **Tools** | Project structure is Maven-compatible. |
 
