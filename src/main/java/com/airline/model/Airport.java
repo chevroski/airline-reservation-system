@@ -15,6 +15,10 @@ public class Airport {
         return name;
     }
 
+    public String getCode() {
+        return name;
+    }
+
     public String getCity() {
         return city;
     }

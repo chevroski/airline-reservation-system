@@ -55,6 +55,18 @@ public class AirlineManager {
         return passengers;
     }
 
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
+    public List<Airport> getAirports() {
+        return airports;
+    }
+
+    public List<Aircraft> getAircrafts() {
+        return aircrafts;
+    }
+
     public Flight getFlightByNumber(int number) {
         for (Flight f : flights) {
             if (f.getFlightNumber() == number) {

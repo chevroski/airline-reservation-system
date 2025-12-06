@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.airline.PassengerTest" time="0.006" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.airline.AirlineManagerTest" time="0.064" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -59,13 +59,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testCancelBooking" classname="com.airline.PassengerTest" time="0.003">
-    <system-out><![CDATA[Flight booked successfully. Reservation ID: 8654
-Reservation 8654 cancelled.
-]]></system-out>
-  </testcase>
-  <testcase name="testBooking" classname="com.airline.PassengerTest" time="0.001">
-    <system-out><![CDATA[Flight booked successfully. Reservation ID: 1446
-]]></system-out>
-  </testcase>
+  <testcase name="testSingleton" classname="com.airline.AirlineManagerTest" time="0.023"/>
+  <testcase name="testFlightCRUD" classname="com.airline.AirlineManagerTest" time="0.012"/>
+  <testcase name="testPassengerCRUD" classname="com.airline.AirlineManagerTest" time="0.004"/>
 </testsuite>

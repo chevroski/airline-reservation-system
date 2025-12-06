@@ -78,9 +78,15 @@ The application provides a Console Interface (CLI) with the following features:
     -   Book flights (`bookFlight`).
     -   Cancel reservations (`cancelBook`).
     -   View reservation details (`getReservations`).
+    -   View reservation details (`getReservations`).
 3.  **Staff Management**:
     -   Manage Pilots and Cabin Crew.
     -   Assign roles and flights (`getRole`, `obtainVol`).
+4.  **Admin Menu (New!)**:
+    -   **Create/Cancel Flights**: Full control over the flight schedule.
+    -   **Resource Management**: Add Aircrafts and Airports dynamically.
+    -   **Crew Assignment**: Assign Pilots and Cabin Crew to specific flights.
+    -   **Aircraft Assignment**: Assign specific aircraft to flights, with automatic availability checks (`checkAvailability`).
 
 ## Bonus Features (Advanced)
 We have implemented the **Statistics and Reports** module as requested for the bonus:
@@ -103,14 +109,11 @@ We have strictly followed the project guidelines:
 ## Validation & Testing (Quality Assurance)
 We have implemented automated **JUnit 5** tests to guarantee the reliability of the core business logic.
 
-### Implemented Tests (`PassengerTest.java`)
-1.  **`testBooking()`**: Verifies that a passenger can successfully book a flight. Checks:
-    -   Reservation is created and linked to the passenger.
-    -   Passenger is added to the flight's manifest.
-    -   Bidirectional association is consistent.
-2.  **`testCancelBooking()`**: Verifies that a passenger can cancel a reservation. Checks:
-    -   Reservation is removed from the passenger's list.
-    -   Status updates are handled correctly.
+### Implemented Tests
+1.  **`PassengerTest.java`**: Verifies booking and cancellation logic.
+2.  **`FlightTest.java`**: Verifies flight planning, modification, and crew assignment.
+3.  **`EmployeeTest.java`**: Verifies specific behaviors for Pilots and Cabin Crew.
+4.  **`AirlineManagerTest.java`**: Verifies the Singleton pattern and CRUD operations.
 
 ### How to Run Tests
 To execute the test suite and verify the system integrity:

@@ -1,1 +1,4 @@
+com\airline\EmployeeTest.class
 com\airline\PassengerTest.class
+com\airline\FlightTest.class
+com\airline\AirlineManagerTest.class
